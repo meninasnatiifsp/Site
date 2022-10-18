@@ -4,12 +4,14 @@
     section {
         height: fit-content;
         flex-wrap: wrap;
+        display: block;
         justify-content: center;
 
         div.title {
             position: relative;
             display: flex;
-            width: 75%;
+            width: fit-content;
+            margin: 0 auto;
             height: fit-content;
             justify-content: center;
             flex-direction: column;
@@ -68,6 +70,7 @@
                     color: #fff;
                     font-weight: 700;
                     text-transform: capitalize;
+                    text-align: center;
                     width: fit-content;
                 }
 
@@ -91,6 +94,7 @@
 
                     a {
                         text-decoration: none;
+                        text-transform: uppercase;
                         color: inherit;
                         font-size: 13pt;
                         background-image: linear-gradient(60deg, var(--rosa), var(--roxo), var(--laranja));
@@ -112,12 +116,62 @@
     }
 }
 
+#downloadBtn {
+    margin: 0px auto 20px auto;
+    width: 90%;
+
+    button {
+        width: 100%;
+    }
+}
+.modal-title {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 700;
+    background-image: linear-gradient(60deg, var(--rosa), var(--roxo), var(--laranja));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    background-color: whitesmoke;
+    border-left-width: 5px;
+    border-radius: 3px;
+    width: 90%;
+    margin: 20px auto;
+
+    h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    p:last-child {
+        margin-bottom: 0;
+    }
+    code {
+        border-radius: 3px;
+    }
+    & + .bs-callout {
+        margin-top: -5px;
+    }
+}
+@each $name, $color in (default, #777), (warning, #f0ad4e) {
+    .callout-#{$name} {
+        border-left-color: $color;
+        h4 {
+            color: $color;
+        }
+    }
+}
+
 @media (max-width: 768px) {
     div.container {
         width: 90% !important;
 
         div.card {
-            margin: 40px 0 !important;
+            margin: 0 0 40px 0 !important;
         }
     }
 }

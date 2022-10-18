@@ -1,38 +1,43 @@
 <section>
-    <div class="title">
-        <p>Projetos desenvolvidos</p><br>
-        <p>por alunas.</p>
+  <div class="title">
+    <p>Projetos</p>
+  </div>
+  <div class="container">
+    <div class="card" *ngFor="let aluna of alunas">
+      <h2>{{ aluna.site }}</h2>
+      <p>{{ aluna.nome }}</p>
+      <p class="button" (click)="open(mymodal, aluna.nome, aluna.endS)">
+        <a>Abrir projeto</a>
+      </p>
     </div>
-    <div class="container">
-        <div class="card">
-            <h2>Nome do site</h2>
-            <p>Nome do aluno</p>
-            <p class="button"><a href="#">VER PROJETO</a></p>
-        </div>
-        <div class="card">
-            <h2>Nome do site</h2>
-            <p>Nome do aluno</p>
-            <p class="button"><a href="#">VER PROJETO</a></p>
-        </div>
-        <div class="card">
-            <h2>Nome do site</h2>
-            <p>Nome do aluno</p>
-            <p class="button"><a href="#">VER PROJETO</a></p>
-        </div>
-        <div class="card">
-            <h2>Nome do site</h2>
-            <p>Nome do aluno</p>
-            <p class="button"><a href="#">VER PROJETO</a></p>
-        </div>
-        <div class="card">
-            <h2>Nome do site</h2>
-            <p>Nome do aluno</p>
-            <p class="button"><a href="#">VER PROJETO</a></p>
-        </div>
-        <div class="card">
-            <h2>Nome do site</h2>
-            <p>Nome do aluno</p>
-            <p class="button"><a href="#">VER PROJETO</a></p>
-        </div>
-    </div>
+
+    <ng-template #mymodal let-modal>
+      <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">{{ nomeAluna }}</h4>
+      </div>
+
+      <div class="modal-body">
+        <h5 align="center">Ações</h5>
+      </div>
+      <a id="downloadBtn" target="_blank" href="assets/projetos/{{ caminho }}"
+        ><button type="button" class="btn btn-success">
+          Baixar arquivo HTML
+        </button></a
+      >
+
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-outline-danger"
+          (click)="modal.close('Save click')"
+        >
+          Fechar
+        </button>
+      </div>
+    </ng-template>
+  </div>
+  <div class="callout callout-warning">
+    <h4>Aviso</h4>
+    Caso seu projeto não esteja aqui, chame o(a) professor(a).
+  </div>
 </section>

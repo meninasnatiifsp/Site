@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+::-webkit-scrollbar-track {
+    background-color:  whitesmoke;
+}
+::-webkit-scrollbar {
+    width: 3px;
+    background: whitesmoke;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(164, 23, 102, 1);
+    backdrop-filter: blur(5px);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Lobster", cursive;
+}
+body {
+    background: linear-gradient(90deg, rgba(17, 92, 186, 1) 0%, rgba(164, 23, 102, 1) 100%);
+}
+h2 {
+    font-size: 30pt;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    margin: 20px 0;
+}
+div {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+}
+img {
+    position: relative;
+    display: flex;
+    margin: 40px auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    transition: all 0.1s;
+    left: 40.7%;
+    position: relative;
+    font-family: "Varela Round", sans-serif;
+}
+a:hover {
+    opacity: 0.7;
+    transition: all 0.1s;
+}
+ul > h3 {
+    font-family: "Varela Round", sans-serif;
+}
+ul {
+    position: relative;
+    display: block;
+    text-align: center;
+    width: fit-content;
+    margin: 50px auto;
+    color: #fff;
+    font-family: "Varela Round", sans-serif;
+}
+ul > li {
+    font-family: "Varela Round", sans-serif;
+    color: blue;
+    margin: 10px 0;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    list-style: inside;
+}
+h3 {
+    background-image: linear-gradient(60deg, orange, #e2e37f, #fafad9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Varela Round", sans-serif;
+    width: fit-content;
+    margin: 0 auto;
+}
+table {
+    position: relative;
+    margin: 10px auto 50px auto;
+    border: none;
+}
+table > tbody > tr > td {
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin: 5px;
+    display: inline-flex;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    color: blue;
+    font-family: "Varela Round", sans-serif;
+    letter-spacing: 1px;
+}

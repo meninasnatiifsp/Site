@@ -1,12 +1,8 @@
 <section>
   <div class="grid-base">
     <div class="resume">
-      <h2>Nosso objetivo</h2>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s
-      </p>
+      <h2>Conteúdo de aula</h2>
+      <p>Verifique aqui o conteúdo abordado em cada aula</p>
       <div class="img">
         <img
           src="https://idocode.com.br/wp-content/uploads/2021/07/code-1839406_1920-1.jpg"
@@ -17,40 +13,176 @@
     <div class="topics">
       <div class="topic">
         <div>
-          <i class="fa-solid fa-earth-americas"></i>
-          <h5>Lorem Ipsum is simply</h5>
+          <i class="fa-brands fa-github"></i>
+          <h5>Aula 01</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit ut sociosqu.
+            Criação da conta GitHub para armazenar arquivo HTML, o qual é
+            desenvolvido ao decorrer das aulas.
           </p>
-        </div>
-      </div>
-      <div class="topic">
-        <div>
-          <i class="fa-solid fa-laptop"></i>
-          <h5>Lorem Ipsum is simply</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit ut sociosqu.
-          </p>
+          <a
+            target="_blank"
+            href="assets/Aula01-02.pptx"
+            type="button"
+            class="btn-topics btn btn-success"
+            >Baixar slides</a
+          >
+          <button
+            target="_blank"
+            href=""
+            type="button"
+            class="btn-topics btn btn-dark" disabled
+            >Verificar código</button
+          >
         </div>
       </div>
       <div class="topic">
         <div>
           <i class="fa-solid fa-code"></i>
-          <h5>Lorem Ipsum is simply</h5>
+          <h5>Aula 02</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit ut sociosqu.
+            Explicação de estrutura base, e tag's básicas, como:
+            H(1-6)(cabeçalho), P(parágrafo), B(negrito), I(itálico), FONT.
           </p>
+          <a
+            target="_blank"
+            href="assets/Aula01-02.pptx"
+            type="button"
+            class="btn-topics btn btn-success"
+            >Baixar slides</a
+          >
+          <a
+            type="button"
+            class="btn-topics btn btn-dark"
+            (click)="open(mymodal, '2')"
+            >Verificar código</a
+          >
         </div>
       </div>
       <div class="topic">
         <div>
-          <i class="fa-solid fa-lightbulb"></i>
-          <h5>Lorem Ipsum is simply</h5>
+          <i class="fa-solid fa-image"></i>
+          <h5>Aula 03</h5>
+          <p>Explicação de tag IMG (inserção de imagem).</p>
+          <a
+            target="_blank"
+            href="assets/Aula03-04.pdf"
+            type="button"
+            class="btn-topics btn btn-success"
+            >Baixar slides</a
+          >
+          <a
+            type="button"
+            class="btn-topics btn btn-dark"
+            (click)="open(mymodal, '3')"
+            >Verificar código</a
+          >
+        </div>
+      </div>
+      <div class="topic">
+        <div>
+          <i class="fa-solid fa-video"></i>
+          <h5>Aula 04</h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit ut sociosqu.
+            Explicação de tag IFRAME/VIDEO (inserção de vídeo), e A
+            (âncoras/hiperlinks).
           </p>
+          <a
+            target="_blank"
+            href="assets/Aula03-04.pdf"
+            type="button"
+            class="btn-topics btn btn-success"
+            >Baixar slides</a
+          >
+          <button
+            type="button"
+            class="btn-topics btn btn-dark"
+            (click)="open(mymodal, '4')"
+          >
+            Verificar código
+          </button>
+        </div>
+      </div>
+      <div class="topic">
+        <div>
+          <i class="fa-solid fa-list"></i>
+          <h5>Aula 05</h5>
+          <p>
+            Explicação de tag para listas: OL (lista ordenada), UL (lista não
+            ordenada), LI (item da lista), e Tabela, TABLE, TR (linha), TD
+            (coluna).
+          </p>
+          <button
+            target="_blank"
+            href="assets/Aula01-02.pptx"
+            type="button"
+            class="btn-topics btn btn-success"
+            disabled
+          >
+            Baixar slides
+          </button>
+          <button
+            target="_blank"
+            href=""
+            type="button"
+            class="btn-topics btn btn-dark"
+            disabled
+          >
+            Verificar código
+          </button>
+        </div>
+      </div>
+      <div class="topic">
+        <div>
+          <i class="fa-solid fa-lock"></i>
+          <h5>Aula 06</h5>
+          <p>INDISPONÍVEL NO MOMENTO.</p>
+          <button type="button" class="btn-topics btn btn-success" disabled>
+            Baixar slides
+          </button>
+          <button type="button" class="btn-topics btn btn-dark" disabled>
+            Verificar código
+          </button>
+        </div>
+      </div>
+      <div class="topic">
+        <div>
+          <i class="fa-solid fa-lock"></i>
+          <h5>Aula 07</h5>
+          <p>INDISPONÍVEL NO MOMENTO.</p>
+          <button type="button" class="btn-topics btn btn-success" disabled>
+            Baixar slides
+          </button>
+          <button type="button" class="btn-topics btn btn-dark" disabled>
+            Verificar código
+          </button>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<ng-template #mymodal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Aula 0{{aula}}</h4>
+  </div>
+
+  <div class="modal-body">
+    <h5 align="center">Código</h5>
+    <img style="width: 100%;" src="assets/img/aula0{{aula}}.png" alt="">
+  </div>
+  <a id="downloadBtn" target="_blank" href="assets/cod/{{aula}}.html"
+    ><button type="button" class="btn btn-success">
+      Baixar arquivo HTML
+    </button></a
+  >
+
+  <div class="modal-footer">
+    <button
+      type="button"
+      class="btn btn-outline-danger"
+      (click)="modal.close('Save click')"
+    >
+      Fechar
+    </button>
+  </div>
+</ng-template>
