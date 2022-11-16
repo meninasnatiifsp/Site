@@ -10,167 +10,200 @@
         />
       </div>
     </div>
+
     <div class="topics">
-      <div class="topic">
-        <div>
-          <i class="fa-brands fa-github"></i>
-          <h5>Aula 01</h5>
-          <p>
-            Criação da conta GitHub para armazenar arquivo HTML, o qual é
-            desenvolvido ao decorrer das aulas.
-          </p>
-          <a
-            target="_blank"
-            href="assets/Aula01-02.pptx"
-            type="button"
-            class="btn-topics btn btn-success"
-            >Baixar slides</a
-          >
-          <button
-            target="_blank"
-            href=""
-            type="button"
-            class="btn-topics btn btn-dark" disabled
-            >Verificar código</button
-          >
-        </div>
-      </div>
-      <div class="topic">
-        <div>
-          <i class="fa-solid fa-code"></i>
-          <h5>Aula 02</h5>
-          <p>
-            Explicação de estrutura base, e tag's básicas, como:
-            H(1-6)(cabeçalho), P(parágrafo), B(negrito), I(itálico), FONT.
-          </p>
-          <a
-            target="_blank"
-            href="assets/Aula01-02.pptx"
-            type="button"
-            class="btn-topics btn btn-success"
-            >Baixar slides</a
-          >
-          <a
-            type="button"
-            class="btn-topics btn btn-dark"
-            (click)="open(mymodal, '2')"
-            >Verificar código</a
-          >
-        </div>
-      </div>
-      <div class="topic">
-        <div>
-          <i class="fa-solid fa-image"></i>
-          <h5>Aula 03</h5>
-          <p>Explicação de tag IMG (inserção de imagem).</p>
-          <a
-            target="_blank"
-            href="assets/Aula03-04.pdf"
-            type="button"
-            class="btn-topics btn btn-success"
-            >Baixar slides</a
-          >
-          <a
-            type="button"
-            class="btn-topics btn btn-dark"
-            (click)="open(mymodal, '3')"
-            >Verificar código</a
-          >
-        </div>
-      </div>
-      <div class="topic">
-        <div>
-          <i class="fa-solid fa-video"></i>
-          <h5>Aula 04</h5>
-          <p>
-            Explicação de tag IFRAME/VIDEO (inserção de vídeo), e A
-            (âncoras/hiperlinks).
-          </p>
-          <a
-            target="_blank"
-            href="assets/Aula03-04.pdf"
-            type="button"
-            class="btn-topics btn btn-success"
-            >Baixar slides</a
-          >
-          <button
-            type="button"
-            class="btn-topics btn btn-dark"
-            (click)="open(mymodal, '4')"
-          >
-            Verificar código
-          </button>
-        </div>
-      </div>
-      <div class="topic">
-        <div>
-          <i class="fa-solid fa-list"></i>
-          <h5>Aula 05</h5>
-          <p>
-            Explicação de tag para listas: OL (lista ordenada), UL (lista não
-            ordenada), LI (item da lista), e Tabela, TABLE, TR (linha), TD
-            (coluna).
-          </p>
-          <button
-            target="_blank"
-            href="assets/Aula01-02.pptx"
-            type="button"
-            class="btn-topics btn btn-success"
-            disabled
-          >
-            Baixar slides
-          </button>
-          <button
-            target="_blank"
-            href=""
-            type="button"
-            class="btn-topics btn btn-dark"
-            disabled
-          >
-            Verificar código
-          </button>
-        </div>
-      </div>
-      <div class="topic">
-        <div>
-          <i class="fa-solid fa-lock"></i>
-          <h5>Aula 06</h5>
-          <p>INDISPONÍVEL NO MOMENTO.</p>
-          <button type="button" class="btn-topics btn btn-success" disabled>
-            Baixar slides
-          </button>
-          <button type="button" class="btn-topics btn btn-dark" disabled>
-            Verificar código
-          </button>
-        </div>
-      </div>
-      <div class="topic">
-        <div>
-          <i class="fa-solid fa-lock"></i>
-          <h5>Aula 07</h5>
-          <p>INDISPONÍVEL NO MOMENTO.</p>
-          <button type="button" class="btn-topics btn btn-success" disabled>
-            Baixar slides
-          </button>
-          <button type="button" class="btn-topics btn btn-dark" disabled>
-            Verificar código
-          </button>
-        </div>
-      </div>
+      <mdb-tabs style="justify-content: center; width: 100%" [pills]="true">
+        <mdb-tab title="AULA 1">
+          <div class="topic">
+            <div>
+              <i class="fa-brands fa-github"></i>
+              <h5>Aula 01</h5>
+              <p>
+                Criação da conta GitHub para armazenar arquivo HTML, o qual é
+                desenvolvido ao decorrer das aulas.
+              </p>
+              <a
+                target="_blank"
+                href="assets/Aula01-02.pptx"
+                type="button"
+                class="btn-topics btn btn-success"
+                >Baixar slides</a
+              >
+              <button
+                target="_blank"
+                href=""
+                type="button"
+                class="btn-topics btn btn-dark"
+                disabled
+              >
+                Verificar código
+              </button>
+            </div>
+          </div>
+        </mdb-tab>
+        <mdb-tab title="AULA 2">
+          <div class="topic">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h5>Aula 02</h5>
+              <p>
+                Explicação de estrutura base, e tag's básicas, como:
+                H(1-6)(cabeçalho), P(parágrafo), B(negrito), I(itálico), FONT.
+              </p>
+              <a
+                target="_blank"
+                href="assets/Aula01-02.pptx"
+                type="button"
+                class="btn-topics btn btn-success"
+                >Baixar slides</a
+              >
+              <a
+                type="button"
+                class="btn-topics btn btn-dark"
+                (click)="open(mymodal, '2')"
+                >Verificar código</a
+              >
+            </div>
+          </div>
+        </mdb-tab>
+        <mdb-tab title="AULA 3">
+          <div class="topic">
+            <div>
+              <i class="fa-solid fa-image"></i>
+              <h5>Aula 03</h5>
+              <p>Explicação de tag IMG (inserção de imagem).</p>
+              <a
+                target="_blank"
+                href="assets/Aula03-04.pdf"
+                type="button"
+                class="btn-topics btn btn-success"
+                >Baixar slides</a
+              >
+              <a
+                type="button"
+                class="btn-topics btn btn-dark"
+                (click)="open(mymodal, '3')"
+                >Verificar código</a
+              >
+            </div>
+          </div>
+        </mdb-tab>
+        <mdb-tab title="AULA 4">
+          <div class="topic">
+            <div>
+              <i class="fa-solid fa-video"></i>
+              <h5>Aula 04</h5>
+              <p>Explicação de tag IFRAME/VIDEO (inserção de vídeo)</p>
+              <a
+                target="_blank"
+                href="assets/Aula03-04.pdf"
+                type="button"
+                class="btn-topics btn btn-success"
+                >Baixar slides</a
+              >
+              <button
+                type="button"
+                class="btn-topics btn btn-dark"
+                (click)="open(mymodal, '4')"
+              >
+                Verificar código
+              </button>
+            </div>
+          </div>
+        </mdb-tab>
+        <mdb-tab title="AULA 5">
+          <div class="topic">
+            <div>
+              <i class="fa-solid fa-file-code"></i>
+              <h5>Aula 05</h5>
+              <p>
+                Implementação de estilo a partir de CSS - Cascading Style
+                Sheets.
+              </p>
+              <a
+                target="_blank"
+                href="assets/Aula03-04.pdf"
+                type="button"
+                class="btn-topics btn btn-success"
+                >Baixar slides</a
+              >
+              <button
+                type="button"
+                class="btn-topics btn btn-dark"
+                (click)="open(mymodal, '5')"
+              >
+                Verificar código
+              </button>
+            </div>
+          </div>
+        </mdb-tab>
+        <mdb-tab title="AULA 6">
+          <div class="topic">
+            <div>
+              <i class="fa-solid fa-list-ol"></i>
+              <h5>Aula 06</h5>
+              <p>
+                Explicação de tag para listas: OL (lista ordenada), UL (lista
+                não ordenada), LI (item da lista), e A (âncoras/hiperlinks).
+              </p>
+              <a
+                target="_blank"
+                href="assets/Aula03-04.pdf"
+                type="button"
+                class="btn-topics btn btn-success"
+                >Baixar slides</a
+              >
+              <button
+                type="button"
+                class="btn-topics btn btn-dark"
+                (click)="open(mymodal, '6')"
+              >
+                Verificar código
+              </button>
+            </div>
+          </div>
+        </mdb-tab>
+        <mdb-tab title="AULA 7">
+          <div class="topic">
+            <div>
+              <i class="fa-solid fa-table"></i>
+              <h5>Aula 07</h5>
+              <p>
+                Explicação de tag para Tabelas (TABLE), linha (TR), coluna (TD);
+                e publicação dos sites no Github Pages
+              </p>
+              <a
+                target="_blank"
+                href="assets/Aula07.pdf"
+                type="button"
+                class="btn-topics btn btn-success"
+                >Baixar slides</a
+              >
+              <button
+                type="button"
+                class="btn-topics btn btn-dark"
+                (click)="open(mymodal, '7')"
+              >
+                Verificar código
+              </button>
+            </div>
+          </div>
+        </mdb-tab>
+      </mdb-tabs>
     </div>
   </div>
 </section>
 
 <ng-template #mymodal let-modal>
   <div class="modal-header">
-    <h4 class="modal-title" id="modal-basic-title">Aula 0{{aula}}</h4>
+    <h4 class="modal-title" id="modal-basic-title">Aula 0{{ aula }}</h4>
   </div>
 
   <div class="modal-body">
     <h5 align="center">Código</h5>
-    <img style="width: 100%;" src="assets/img/aula0{{aula}}.png" alt="">
+    <img style="width: 100%" src="assets/img/aula_{{ aula }}.png" alt="" />
   </div>
-  <a id="downloadBtn" target="_blank" href="assets/cod/{{aula}}.html"
+  <a id="downloadBtn" target="_blank" href="assets/cod/{{ aula }}.html"
     ><button type="button" class="btn btn-success">
       Baixar arquivo HTML
     </button></a
@@ -186,3 +219,10 @@
     </button>
   </div>
 </ng-template>
+<section class="apis-model">
+  <h2>API'S</h2>
+  <p>
+    &#60;link rel="stylesheet"
+    href="https://meninasnatiifsp.github.io/Site/assets/style.css">
+  </p>
+</section>

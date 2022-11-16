@@ -1,16 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
 ::-webkit-scrollbar-track {
-    background-color:  whitesmoke;
+    background-color: whitesmoke;
 }
+
 ::-webkit-scrollbar {
     width: 3px;
     background: whitesmoke;
 }
+
 ::-webkit-scrollbar-thumb {
     background: rgba(164, 23, 102, 1);
     backdrop-filter: blur(5px);
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -18,9 +22,23 @@
     outline: none;
     font-family: "Lobster", cursive;
 }
+
 body {
     background: linear-gradient(90deg, rgba(17, 92, 186, 1) 0%, rgba(164, 23, 102, 1) 100%);
+    overflow-x: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
+
+iframe {
+    margin: 50px auto !important;
+    position: relative !important;
+    display: flex !important;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px !important;
+}
+
 h2 {
     font-size: 30pt;
     text-transform: capitalize;
@@ -29,11 +47,13 @@ h2 {
     color: #fff;
     margin: 20px 0;
 }
+
 div {
     color: rgba(255, 255, 255, 0.5);
     text-align: center;
     font-family: "Varela Round", sans-serif;
 }
+
 img {
     position: relative;
     display: flex;
@@ -42,6 +62,7 @@ img {
     object-fit: cover;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
+
 a {
     color: #fff;
     text-decoration: none;
@@ -54,13 +75,16 @@ a {
     position: relative;
     font-family: "Varela Round", sans-serif;
 }
+
 a:hover {
     opacity: 0.7;
     transition: all 0.1s;
 }
-ul > h3 {
+
+ul>h3 {
     font-family: "Varela Round", sans-serif;
 }
+
 ul {
     position: relative;
     display: block;
@@ -70,7 +94,8 @@ ul {
     color: #fff;
     font-family: "Varela Round", sans-serif;
 }
-ul > li {
+
+ul>li {
     font-family: "Varela Round", sans-serif;
     color: blue;
     margin: 10px 0;
@@ -80,6 +105,7 @@ ul > li {
     padding: 10px 20px;
     list-style: inside;
 }
+
 h3 {
     background-image: linear-gradient(60deg, orange, #e2e37f, #fafad9);
     -webkit-background-clip: text;
@@ -89,12 +115,14 @@ h3 {
     width: fit-content;
     margin: 0 auto;
 }
+
 table {
     position: relative;
     margin: 10px auto 50px auto;
     border: none;
 }
-table > tbody > tr > td {
+
+table>tbody>tr>td {
     padding: 20px;
     background-color: whitesmoke;
     border-radius: 10px;

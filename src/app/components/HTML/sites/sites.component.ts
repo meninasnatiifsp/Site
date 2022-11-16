@@ -36,13 +36,23 @@ export class SitesComponent implements OnInit {
     }, 
     { 
       nome: 'Bia Neves', 
-      site: '---',
+      site: 'Site de beleza',
       endS: 'bia_neves.html'
     }, 
     { 
       nome: 'Gabs', 
       site: '---',
       endS: 'gabs.html'
+    }, 
+    { 
+      nome: 'Lu', 
+      site: 'Alteza',
+      endS: 'luhtml.html'
+    },
+    { 
+      nome: 'Thaina', 
+      site: '---',
+      endS: 'thaina.html'
     }, 
   ];
 

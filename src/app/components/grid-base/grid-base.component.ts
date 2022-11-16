@@ -1,12 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewChildren } from '@angular/core';
 import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { MdbTabsComponent } from 'mdb-angular-ui-kit/tabs';
+import { MdbTabChange } from 'mdb-angular-ui-kit/tabs/tabs.component';
 
 @Component({
   selector: 'app-grid-base',
   templateUrl: './grid-base.component.html',
   styleUrls: ['./grid-base.component.scss']
 })
+
 export class GridBaseComponent implements OnInit {
+  @ViewChild('tabs') tabs!: MdbTabsComponent;
+
+  onTabChange(event: MdbTabChange):void {
+    console.log(event);
+  }
   
   ngOnInit(): void {}
 
